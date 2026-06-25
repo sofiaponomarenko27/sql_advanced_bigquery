@@ -15,19 +15,18 @@ Each script solves a real analytical task using advanced SQL techniques.
 | # | Topic | Task | Key Techniques |
 |---|-------|------|----------------|
 | 1 | [Window Functions](./window_functions/) | [Emails Sent by Month](./window_functions/README.md) | `COUNT OVER`, `MIN/MAX OVER`, `DATE_TRUNC`, `NULLIF` |
-| 2 | CTEs | _coming soon_ | |
-| 3 | Datetime Functions | _coming soon_ | |
-| 4 | Nested Fields | _coming soon_ | |
+| 2 | [CTEs](./cte/) | [Revenue by Device and Continent](./cte/README.md) | `WITH AS`, `SUM(CASE WHEN)`, `SUM() OVER ()`, `COUNT DISTINCT` |
+| 3 | [Datetime Functions](./datetime_functions/) | [Revenues and Costs by Year and Month](./datetime_functions/README.md) | `EXTRACT`, `UNION ALL`, subquery, `JOIN` |
+| 4 | [Nested Fields](./nested_fields/) | [YouTube Events](./nested_fields/README.md) | `CROSS JOIN UNNEST`, `LIKE`, `LOWER`, `SUM(CASE WHEN)` |
 
 ---
 
 ## Repository Structure
-
-sql-advanced-bigquery/
+sql_advanced_bigquery/
 
 │
 
-├── README.md                        ← you are here
+├── README.md                                        ← you are here
 
 │
 
@@ -41,7 +40,7 @@ sql-advanced-bigquery/
 
 ├── cte/
 
-│   ├── (coming soon)
+│   ├── revenue_by_device_and_continent.sql
 
 │   └── README.md
 
@@ -49,7 +48,7 @@ sql-advanced-bigquery/
 
 ├── datetime_functions/
 
-│   ├── (coming soon)
+│   ├── revenues_and_costs_by_year_and_month.sql
 
 │   └── README.md
 
@@ -57,6 +56,8 @@ sql-advanced-bigquery/
 
 └── nested_fields/
 
-├── (coming soon)
+├── youtube_events.sql
+
+└── README.md
 
 └── README.md
