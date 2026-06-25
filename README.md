@@ -18,10 +18,12 @@ Each script solves a real analytical task using advanced SQL techniques.
 | 2 | [CTEs](./cte/) | [Revenue by Device and Continent](./cte/README.md) | `WITH AS`, `SUM(CASE WHEN)`, `SUM() OVER ()`, `COUNT DISTINCT` |
 | 3 | [Datetime Functions](./datetime_functions/) | [Revenues and Costs by Year and Month](./datetime_functions/README.md) | `EXTRACT`, `UNION ALL`, subquery, `JOIN` |
 | 4 | [Nested Fields](./nested_fields/) | [YouTube Events](./nested_fields/README.md) | `CROSS JOIN UNNEST`, `LIKE`, `LOWER`, `SUM(CASE WHEN)` |
+| 5 | [Final Project](./final_project/) | [Email Campaign Analysis](./final_project/README.md) | 5x CTEs, `DENSE_RANK`, `UNION ALL`, `LEFT JOIN`, `DATE_ADD` |
 
 ---
 
 ## Repository Structure
+
 sql_advanced_bigquery/
 
 │
@@ -54,9 +56,20 @@ sql_advanced_bigquery/
 
 │
 
-└── nested_fields/
+├── nested_fields/
 
-├── youtube_events.sql
+│   ├── youtube_events.sql
+
+│   └── README.md
+
+│
+
+└── final_project/
+
+├── email_campaign_analysis.sql
+
+└── README.md
+
 
 └── README.md
 
